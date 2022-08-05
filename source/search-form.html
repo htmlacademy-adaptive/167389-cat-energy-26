@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+
+<body>
+  <header class="main-header container">
+    <a class="logo" href="#">
+      <img class="logo__image" width="33" height="38" alt="логотип Кот-Супергерой" src="./img/logo-mobile.svg">
+      <img class="logo__name logo-name" width="101" height="18" alt="Кот Энерджи" src="./img/logo_2.svg">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__container">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="./index.html">Главная</a>
+          </li>
+          <li class="site-list__item site-list__item--current">
+            <a href="./catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a>Подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main-search">
+    <h2 class="main-search__title">Подбор программы</h2>
+    <p class="main-search__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <form class="main-search__form search-form" method="post" action="https://echo.htmlacademy.ru">
+      <fieldset class="search-form__group">
+        <legend class="visually-hidden search-form__title">Данные животного</legend>
+        <ul class="search-form__list pet-info ">
+          <li class="search-form__item">
+            <label class="search-form__label" for="search-form__name">Имя</label>
+            <input class="search-form__text" id="search-form__name" type="text" placeholder="Барсик">
+          </li>
+          <li class="search-form__item">
+            <label class="search-form__label" for="search-form__weight">Вес (кг):*</label>
+            <input class="search-form__text" id="search-form__weight" type="text" placeholder="7">
+          </li>
+          <li class="search-form__item">
+            <label class="search-form__label" for="search-form__age">Возраст (лет):</label>
+            <input class="search-form__text" id="search-form__age" type="text" placeholder="7">
+          </li>
+        </ul>
+        <ul class="search-form__list goal">
+          <li class="search-form__item">
+            <label class="search-form__label" for="weight__loss">Похудение</label>
+            <input class="search-form__text" id="weight__loss" name="weight" value="weight-loss" type="radio" checked>
+          </li>
+          <li class="search-form__item">
+            <label class="search-form__label" for="weight__gain">Набор массы</label>
+            <input class="search-form__text" id="weight__gain" name="weight" value="weight-gain" type="radio">
+          </li>
+          <li class="search-form__item">
+            <label class="search-form__label" for="advise">Не знаю (Нужен ваш совет)</label>
+            <input class="search-form__text" id="advise" name="weight" value="advice" type="radio" checked>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="search-form__group owner-info">
+        <legend class="search-form__title">Контактные данные (владельца кота)</legend>
+        <ul class="search-form__list">
+          <li class="search-form__item">
+            <label class="search-form__label" for="search-form__email">E-mail:*</label>
+            <input class="search-form__text" id="search-form__email" type="text" placeholder="kuklachev@gmail.com">
+          </li>
+          <li class="search-form__item">
+            <label class="search-form__label" for="search-form__phone">Телефон:*</label>
+            <input class="search-form__text" id="search-form__phone" type="text" placeholder="8 (960) 900-60-90">
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="search-form__group comments">
+        <legend class="search-form__title">Комментарий</legend>
+        <textarea class="search-form-textarea" placeholder="Расскажите обо всех повАдках кота" name=comment></textarea>
+      </fieldset>
+      <fieldset class="search-form__group search-form__group--addittionally">
+        <ul class="search-form__list">
+          <li class="search-form__item">
+            <label class="search-form__label" for="sweetener">Сахарозаменитель</label>
+            <input class="search-form__text" id="sweetener" name="ingredients" value="sweetener" type="checkbox"
+              checked>
+          </li>
+          <li class="search-form__item">
+            <label class="search-form__label" for="water">Питьевая вода</label>
+            <input class="search-form__text" id="water" name="ingredients" value="water" type="checkbox">
+          </li>
+          <li class="search-form__item">
+            <label class="search-form__label" for="milk">Молоко</label>
+            <input class="search-form__text" id="milk" name="ingredients" value="milk" type="checkbox">
+          </li>
+          <li class="search-form__item">
+            <label class="search-form__label" for="vitamins">Витамины</label>
+            <input class="search-form__text" id="vitamins" name="ingredients" value="vitamins" type="checkbox">
+          </li>
+        </ul>
+      </fieldset>
+      <button class="button" type="submit">Отправить заявку</button>
+      <p class="footnote">* — Обязательные поля</p>
+    </form>
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <div class="main-footer__contacts contacts">
+        <p class="contacts__slogan">Приглашаем к сотрудничеству диллеров!</p>
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="contacts__map">
+          <span class="visually-hidden">Карта</span>
+          <img class="contacts__map-image" src="./img/map.jpg" alt="Карта">
+        </div>
+      </div>
+      <div class="main-footer__content">
+        <a class="main-footer__logo logo ">
+          <img class="logo__name" width="101" height="18" alt="Кот Энерджи" src="./img/logo_2.svg">
+        </a>
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Ютуб</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Телеграмм</a>
+            </li>
+          </ul>
+        </div>
+        <a class="main-footer__copyright">HTML Academy
+          <svg class="main-footer__icon" aria-hidden="true" focusable="false" width="27" height="34" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.64.02 13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0Zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26Zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83Zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24Z"
+              fill="#666" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
