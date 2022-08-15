@@ -1,0 +1,23 @@
+.sub-catalog__list {
+  list-style: none;
+  padding: 0 20px;
+}
+
+.sub-catalog__title {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  font-weight: 16px;
+  text-transform: uppercase;
+
+}
+
+.product__details {
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

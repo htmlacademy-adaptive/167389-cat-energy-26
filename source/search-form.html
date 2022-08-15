@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body class="page-container">
   <header class="main-header container">
     <a class="logo" href="#">
       <img class="logo__image" width="33" height="38" alt="логотип Кот-Супергерой" src="./img/logo-mobile.svg">
@@ -31,7 +32,7 @@
       </div>
     </nav>
   </header>
-  <main class="main-search">
+  <main class="main-search container">
     <h2 class="main-search__title">Подбор программы</h2>
     <p class="main-search__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     <form class="main-search__form search-form" method="post" action="https://echo.htmlacademy.ru">
@@ -105,7 +106,7 @@
         </ul>
       </fieldset>
       <button class="button" type="submit">Отправить заявку</button>
-      <p class="footnote">* — Обязательные поля</p>
+      <p class="search-form__footnote">* — Обязательные поля</p>
     </form>
   </main>
   <footer class="main-footer">

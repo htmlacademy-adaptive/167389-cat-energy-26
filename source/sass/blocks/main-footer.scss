@@ -1,0 +1,15 @@
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #F2F2F2;
+}
+
+.main-footer__content {
+  margin: 0 20px;
+}
+
+.main-footer__copyright {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

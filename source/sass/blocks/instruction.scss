@@ -1,0 +1,45 @@
+.instruction {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.instruction__wrapper {
+  margin: 0 20px;
+}
+
+.instruction__title {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  font-family: "Oswald";
+}
+
+.instruction__list {
+  list-style-type: none;
+  margin: 0;
+  margin-top: 42px;
+  padding: 0;
+}
+
+.instruction__item {
+  padding-left: 80px;
+  padding-bottom: 26px;
+  position: relative;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  font-family: "Arial";
+}
+
+.instruction__item::before {
+  position: absolute;
+  background-color: #68B738;
+  width: 60px;
+  height: 60px;
+  content: "";
+  left: 0px;
+  top: 0;
+}

@@ -1,0 +1,14 @@
+.map {
+  margin: 0;
+  position: relative;
+}
+
+.map::after {
+  position: absolute;
+  background-image: url("../../img/map_pin.png");
+  content: "";
+  width: 57px;
+  height: 53px;
+  top: 139px;
+  left: 134px;
+}
