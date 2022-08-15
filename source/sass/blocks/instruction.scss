@@ -14,7 +14,7 @@
   font-size: 36px;
   line-height: 40px;
   color: #000000;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
 }
 
 .instruction__list {
@@ -31,15 +31,15 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
 }
 
 .instruction__item::before {
   position: absolute;
-  background-color: #68B738;
+  background-color: #68b738;
   width: 60px;
   height: 60px;
   content: "";
-  left: 0px;
+  left: 0;
   top: 0;
 }
