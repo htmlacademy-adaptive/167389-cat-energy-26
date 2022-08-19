@@ -1,1 +1,23 @@
-// Начните писать стили здесь
+@use "./blocks/fonts.scss";
+@use "./blocks/visually-hidden.scss";
+@use "./blocks/main-header.scss";
+@use "./blocks/main-nav.scss";
+@use "./blocks/site-list.scss";
+@use "./blocks/promo.scss";
+@use "./blocks/target.scss";
+@use "./blocks/instruction.scss";
+@use "./blocks/example.scss";
+@use "./blocks/contacts.scss";
+@use "./blocks/map.scss";
+@use "./blocks/main-footer.scss";
+@use "./blocks/logo.scss";
+@use "./blocks/social.scss";
+@use "./blocks/button.scss";
+@use "./blocks/container.scss";
+@use "./blocks/catalog.scss";
+@use "./blocks/sub-catalog.scss";
+@use "./blocks/search-form.scss";
+@use "./blocks/product.scss";
+@use "./blocks/main-inner.scss";
+@use "./blocks/main-search.scss";
+@use "./blocks/page-container.scss";

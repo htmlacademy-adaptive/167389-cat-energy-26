@@ -1,0 +1,43 @@
+.promo {
+  width: 320px;
+  background-color: #ffffff;
+  position: relative;
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.promo__wrapper {
+  background-image:
+    linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    url("../../img/promo-cat.png");
+  background-repeat: no-repeat;
+  min-height: 302px;
+}
+
+.promo__title {
+  font-size: 36px;
+  line-height: 36px;
+  padding-top: 27px;
+  padding-bottom: 25px;
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.promo__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  margin: 0;
+  margin-bottom: 164px;
+  padding: 0;
+}
+
+.promo__image {
+  margin-bottom: 30px;
+  position: absolute;
+  left: 20px;
+  top: 167px;
+}
