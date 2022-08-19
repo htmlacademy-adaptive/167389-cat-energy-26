@@ -1,6 +1,6 @@
 .main-search {
   margin: 0;
-  padding: 0 20px;
+  padding: 0;
 }
 
 .main-search__title {
@@ -8,4 +8,17 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+  text-transform: none;
+  padding: 0 20px;
 }
+
+.main-search__text {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0 20px;
+}
+
