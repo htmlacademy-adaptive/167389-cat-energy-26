@@ -15,7 +15,6 @@
   padding: 0;
   border: none;
   border-bottom: 1px solid #d9d9d9;
-
 }
 
 .search-form__item {
@@ -56,7 +55,7 @@
   font-family: inherit;
 }
 
-.search-form-textarea  {
+.search-form__textarea {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -64,7 +63,7 @@
   padding-top: 10px;
   margin-top: 35px;
   margin-bottom: 14px;
-  width:100%;
+  width: 100%;
   color: #000000;
   font-family: inherit;
 }
