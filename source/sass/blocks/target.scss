@@ -65,3 +65,50 @@
   text-decoration: none;
   color: #000000;
 }
+
+@media (min-width: 768px) {
+  .target__item {
+    padding: 77px 316px 57px 52px;
+    margin: 30px;
+    max-width: 340px;
+  }
+
+  .target__item--weight-loss {
+    background-image: url("../../img/cat_back-loss-pc.png");
+    background-repeat: no-repeat;
+    background-position: 446px 81px;
+  }
+
+  .target__item--weight-gain {
+    background-image: url("../../img/cat_back-gain-pc.png");
+    background-repeat: no-repeat;
+    background-position: 412px 91px;
+  }
+
+  .target__item-title {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: 36px;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .target__item-description {
+    font-size: 16px;
+    line-height: 24px;
+    color: #444444;
+    margin: 0;
+    font-family: "Arial", sans-serif;
+  }
+
+  .target__item-link {
+    margin-top: 52px;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+  }
+}

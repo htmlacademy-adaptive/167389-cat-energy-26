@@ -13,3 +13,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+@media (min-width: 768px) {
+  .main-footer__content {
+    display: flex;
+    justify-content: space-between;
+    margin: 63px 30px;
+  }
+}

@@ -12,11 +12,10 @@
 }
 
 .button--promo {
-  min-width: 200px;
-  min-height: 26px;
+
   margin: 0 20px;
   margin-top: 138px;
-  padding: 7px 44px;
+  padding: 11px 44px;
   font-size: 14px;
   line-height: 18px;
 }
@@ -52,4 +51,14 @@
   padding: 10px 20px;
   font-size: 14px;
   line-height: 18px;
+}
+
+@media (min-width: 768px) {
+  .button--promo {
+    padding: 14px 26px;
+    max-width: 192px;
+    margin-left: 117px;
+    margin-top: 49px;
+    margin-bottom: 526px;
+  }
 }

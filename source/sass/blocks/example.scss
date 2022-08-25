@@ -73,3 +73,61 @@
   text-transform: uppercase;
   color: #000000;
 }
+
+@media (min-width: 768px) {
+
+  .example__wrapper {
+    margin: 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+    margin-top: 18px;
+  }
+
+  .example__description {
+    margin-top: 63px;
+    margin-bottom: 54px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #444444;
+    font-family: "Arial", sans-serif;
+  }
+
+  .example__result {
+    display: flex;
+    justify-content: space-between;
+    max-width: 366px;
+  }
+
+  .example__results-title {
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 5px 8px;
+    text-align: center;
+    color: #444444;
+    background-color: #eaeaea;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+  }
+
+  .example__results-description {
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__costs {
+    margin-left: auto;
+    font-size: 20px;
+    line-height: 20px;
+    max-width: 174px;
+    text-align: right;
+  }
+}
