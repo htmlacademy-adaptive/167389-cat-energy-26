@@ -88,3 +88,16 @@
     font-family: "Arial", sans-serif;
   }
 }
+
+@media (min-width: 1440px) {
+  .instruction__list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 100%;
+  }
+
+  .instruction__item {
+    max-width: 230px;
+  }
+}

@@ -34,6 +34,7 @@
   padding: 10px 20px;
   font-size: 14px;
   line-height: 18px;
+  box-sizing: border-box;
 }
 
 .button--empty {
@@ -60,5 +61,38 @@
     margin-left: 117px;
     margin-top: 49px;
     margin-bottom: 526px;
+  }
+
+  .button--catalog {
+    min-width: 168px;
+    margin: 0;
+    padding: 10px 53px;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 33px;
+  }
+
+  .button--subcatalog {
+    min-width: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .button--catalog,
+  .button--empty {
+    min-width: 91px;
+    max-width: 168px;
+    margin: 0;
+    padding: 10px 39px;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 33px;
+  }
+
+  .button--subcatalog {
+    min-width: 192px;
+    max-width: 192px;
+    padding: 7px 26px;
+    margin: 15px 0 17px 0;
   }
 }

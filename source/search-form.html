@@ -19,15 +19,15 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__container">
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list site-list site-list--white-letter">
           <li class="site-list__item">
-            <a href="./index.html">Главная</a>
+            <a class="site-list__link" href="./index.html">Главная</a>
           </li>
           <li class="site-list__item site-list__item--current">
-            <a href="./catalog.html">Каталог продукции</a>
+            <a class="site-list__link" href="./catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Подбор программы</a>
+            <a class="site-list__link" href="#">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -53,18 +53,18 @@
             <input class="search-form__text" id="search-form__age" type="text" placeholder="7">
           </li>
         </ul>
-        <ul class="search-form__list goal">
-          <li class="search-form__item">
-            <label class="search-form__label" for="weight__loss">Похудение</label>
-            <input class="search-form__text" id="weight__loss" name="weight" value="weight-loss" type="radio" checked>
+        <ul class="search-form__list search-form__list--dark goal">
+          <li class="goal__item">
+            <input class="goal__radiobutton" id="weight__loss" name="weight" value="weight-loss" type="radio" checked>
+            <label class="goal__label" for="weight__loss">Похудение</label>
           </li>
-          <li class="search-form__item">
-            <label class="search-form__label" for="weight__gain">Набор массы</label>
-            <input class="search-form__text" id="weight__gain" name="weight" value="weight-gain" type="radio">
+          <li class="goal__item">
+            <input class="goal__radiobutton" id="weight__gain" name="weight" value="weight-gain" type="radio">
+            <label class="goal__label" for="weight__gain">Набор массы</label>
           </li>
-          <li class="search-form__item">
-            <label class="search-form__label" for="advise">Не знаю (Нужен ваш совет)</label>
-            <input class="search-form__text" id="advise" name="weight" value="advice" type="radio" checked>
+          <li class="goal__item">
+            <input class="goal__radiobutton" id="advise" name="weight" value="advice" type="radio" checked>
+            <label class="goal__label" for="advise">Не знаю (Нужен ваш совет)</label>
           </li>
         </ul>
       </fieldset>
@@ -83,26 +83,27 @@
       </fieldset>
       <fieldset class="search-form__group comments">
         <legend class="search-form__title">Комментарий</legend>
-        <textarea class="search-form-textarea" placeholder="Расскажите обо всех повАдках кота" name=comment></textarea>
+        <textarea class="search-form__textarea" placeholder="Расскажите обо всех повАдках кота" name=comment></textarea>
       </fieldset>
-      <fieldset class="search-form__group search-form__group--addittionally">
-        <ul class="search-form__list">
-          <li class="search-form__item">
-            <label class="search-form__label" for="sweetener">Сахарозаменитель</label>
-            <input class="search-form__text" id="sweetener" name="ingredients" value="sweetener" type="checkbox"
+      <fieldset class="search-form__group">
+        <legend class="search-form__title">Дополнительно</legend>
+        <ul class="search-form__list search-form__list--dark addittionally">
+          <li class="addittionally__item">
+            <input class="addittionally__checkbox" id="sweetener" name="ingredients" value="sweetener" type="checkbox"
               checked>
+            <label class="addittionally__label" for="sweetener">Сахарозаменитель</label>
           </li>
-          <li class="search-form__item">
-            <label class="search-form__label" for="water">Питьевая вода</label>
-            <input class="search-form__text" id="water" name="ingredients" value="water" type="checkbox">
+          <li class="addittionally__item">
+            <input class="addittionally__checkbox" id="water" name="ingredients" value="water" type="checkbox">
+            <label class="addittionally__label" for="water">Питьевая вода</label>
           </li>
-          <li class="search-form__item">
-            <label class="search-form__label" for="milk">Молоко</label>
-            <input class="search-form__text" id="milk" name="ingredients" value="milk" type="checkbox">
+          <li class="addittionally__item">
+            <input class="addittionally__checkbox" id="milk" name="ingredients" value="milk" type="checkbox">
+            <label class="addittionally__label" for="milk">Молоко</label>
           </li>
-          <li class="search-form__item">
-            <label class="search-form__label" for="vitamins">Витамины</label>
-            <input class="search-form__text" id="vitamins" name="ingredients" value="vitamins" type="checkbox">
+          <li class="addittionally__item">
+            <input class="addittionally__checkbox" id="vitamins" name="ingredients" value="vitamins" type="checkbox">
+            <label class="addittionally__label" for="vitamins">Витамины</label>
           </li>
         </ul>
       </fieldset>

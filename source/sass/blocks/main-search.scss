@@ -1,6 +1,5 @@
 .main-search {
   margin: 0;
-  padding: 0;
 }
 
 .main-search__title {
@@ -9,7 +8,6 @@
   line-height: 36px;
   font-weight: 400;
   text-transform: none;
-  padding: 0 20px;
 }
 
 .main-search__text {
@@ -19,5 +17,23 @@
   line-height: 18px;
   text-transform: uppercase;
   margin: 0;
-  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .main-search {
+    padding: 0 70px;
+  }
+
+  .main-search__title {
+    margin-top: 27px;
+    margin-bottom: 37px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .main-search__text {
+    max-width: 323px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

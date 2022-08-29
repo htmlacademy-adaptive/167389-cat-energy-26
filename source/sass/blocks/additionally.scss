@@ -1,0 +1,25 @@
+@media (min-width: 768px) {
+  .addittionally {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+    padding-top: 62px;
+    padding-bottom: 59px;
+  }
+
+  .addittionally__label {
+    padding-left: 59px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .addittionally {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .addittionally__item:not(:last-child) {
+    margin-right: 40px;
+    min-width: 285px;
+  }
+}
