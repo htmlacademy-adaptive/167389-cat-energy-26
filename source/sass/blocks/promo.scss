@@ -1,5 +1,4 @@
 .promo {
-  width: 320px;
   background-color: #ffffff;
   position: relative;
   color: #ffffff;
@@ -40,4 +39,37 @@
   position: absolute;
   left: 20px;
   top: 167px;
+}
+
+@media (min-width: 768px) {
+  .promo__wrapper {
+    background: #ffffff;
+    background-image: none;
+    color: #000000;
+    text-align: left;
+    max-width: 414px;
+    margin-left: 117px;
+    min-height: auto;
+  }
+
+  .promo__title {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    margin-bottom: 41px;
+    padding: 0;
+  }
+
+  .promo__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+  }
+
+  .promo__image {
+    margin-bottom: 0;
+    position: absolute;
+    left: 120px;
+    top: 167px;
+  }
 }

@@ -4,6 +4,30 @@
 
 .catalog__list {
   list-style: none;
-  margin: 0 20px;
   padding: 0;
+}
+
+@media (min-width: 768px) {
+  .catalog__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 141px;
+    margin: 0;
+  }
+
+  .catalog__item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
+
+@media (min-width: 1440px) {
+  .catalog__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 143px;
+  }
 }
