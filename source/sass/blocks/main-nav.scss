@@ -12,13 +12,34 @@
   position: absolute;
   width: 33px;
   height: 33px;
-  background-image: url("../../img/button-menu-logo.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: #ffffff;
   border: none;
-  left: 220px;
-  top: -40px;
+  right: 20px;
+  top: -50px;
+}
+
+@media (max-width: 767px) {
+  .main-nav--closed {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../img/close_icon.svg");
+    cursor: pointer;
+  }
+
+  .main-nav--opened {
+    background-image: url("../../img/open_icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  .main-nav--closed  .site-list {
+    display: none;
+  }
+
+  .main-nav--open  .site-list {
+    display: block;
+  }
 }
 
 @media (min-width: 768px) {
@@ -26,6 +47,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    margin-right: 30px;
+    margin-top: 20px;
   }
 
   .main-nav__toggle {

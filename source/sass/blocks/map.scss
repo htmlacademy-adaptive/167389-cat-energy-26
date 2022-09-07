@@ -3,6 +3,11 @@
   position: relative;
 }
 
+.map iframe {
+  border: none;
+  display: block;
+}
+
 .map::after {
   position: absolute;
   background-image: url("../../img/map_pin.png");

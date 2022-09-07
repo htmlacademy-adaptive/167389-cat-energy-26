@@ -17,6 +17,7 @@
   line-height: 18px;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 39px;
 }
 
 @media (min-width: 768px) {
@@ -35,5 +36,12 @@
     max-width: 323px;
     font-size: 20px;
     line-height: 30px;
+    margin-bottom: 66px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-search__text {
+    margin-bottom: 56px;
   }
 }

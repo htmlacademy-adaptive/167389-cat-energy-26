@@ -1,6 +1,7 @@
 .target {
   padding: 0;
   margin: 0;
+  width: auto;
 }
 
 .target__list {
@@ -64,25 +65,36 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+  position: relative;
+  display: block;
+
+  &::after {
+    position: absolute;
+    width: 24px;
+    height: 12px;
+    content: "";
+    top: 0;
+    left: 40px;
+    background-image: url("../../img/");
+  }
 }
 
 @media (min-width: 768px) {
   .target__item {
     padding: 77px 316px 57px 52px;
     margin: 30px;
-    max-width: 340px;
   }
 
   .target__item--weight-loss {
     background-image: url("../../img/cat_back-loss-tablet.png");
     background-repeat: no-repeat;
-    background-position: 402px 81px;
+    background-position: 85% 81px;
   }
 
   .target__item--weight-gain {
     background-image: url("../../img/cat_back-gain-tablet.png");
     background-repeat: no-repeat;
-    background-position: 352px 91px;
+    background-position: 90% 91px;
   }
 
   .target__item-title {

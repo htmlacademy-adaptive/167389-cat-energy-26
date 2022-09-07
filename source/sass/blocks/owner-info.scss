@@ -1,0 +1,14 @@
+@media (min-width: 1440px) {
+  .owner-info__list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 76px;
+  }
+
+  .owner-info__item {
+    width: 46%;
+    margin: 0;
+  }
+}

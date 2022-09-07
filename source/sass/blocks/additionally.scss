@@ -16,6 +16,8 @@
   .addittionally {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 0;
   }
 
   .addittionally__item:not(:last-child) {
