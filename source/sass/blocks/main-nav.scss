@@ -31,7 +31,6 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-
   &::before,
   &::after {
     content: "";
@@ -76,7 +75,7 @@
 
   .main-nav--opened {
     position: absolute;
-    top:66px;
+    top: 66px;
     right: 0;
     left: 0;
     z-index: 10;
