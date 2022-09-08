@@ -1,3 +1,37 @@
+.owner-info__item{
+  position: relative;
+}
+
+.owner-info__title {
+  margin-bottom: 35px;
+}
+
+.owner-info__email::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 15px;
+  top: 15px;
+  right: 20px;
+  background-image: url(../../img/icon_email.svg);
+}
+
+.owner-info__phone::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 15px;
+  right: 20px;
+  background-image: url(../../img/icon_phone--mobile.svg);
+}
+
+@media (min-width: 768px) {
+  .owner-info__title {
+    margin-bottom: 76px;
+  }
+}
+
 @media (min-width: 1440px) {
   .owner-info__list {
     display: flex;
@@ -10,5 +44,25 @@
   .owner-info__item {
     width: 46%;
     margin: 0;
+  }
+
+  .owner-info__email::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 15px;
+    top: 17px;
+    right: 20px;
+    background-image: url(../../img/icon_email--tablet.svg);
+  }
+
+  .owner-info__phone::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: 15px;
+    right: 20px;
+    background-image: url(../../img/icon_phone--tablet.svg);
   }
 }

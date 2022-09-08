@@ -16,7 +16,6 @@
   font-weight: 400;
   font-style: normal;
   padding: 21px 33px 22px 19px;
-  margin: 20px;
 }
 
 .target__item--weight-loss {
@@ -74,15 +73,14 @@
     height: 12px;
     content: "";
     top: 0;
-    left: 40px;
-    background-image: url("../../img/");
+    left: 100px;
+    background-image: url("../../img/icon_arrow.svg");
   }
 }
 
 @media (min-width: 768px) {
   .target__item {
     padding: 77px 316px 57px 52px;
-    margin: 30px;
   }
 
   .target__item--weight-loss {
@@ -95,6 +93,7 @@
     background-image: url("../../img/cat_back-gain-tablet.png");
     background-repeat: no-repeat;
     background-position: 90% 91px;
+    margin-top: 30px;
   }
 
   .target__item-title {
@@ -122,6 +121,16 @@
     text-transform: uppercase;
     text-decoration: none;
     color: #000000;
+
+    &::after {
+      position: absolute;
+      width: 24px;
+      height: 12px;
+      content: "";
+      top: 8px;
+      left: 117px;
+      background-image: url("../../img/icon_arrow.svg");
+    }
   }
 }
 
@@ -133,6 +142,7 @@
   .target__list {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 81px;
   }
 
   .target__item {
@@ -150,6 +160,8 @@
     background-image: url("../../img/cat_back-gain-pc.svg");
     background-repeat: no-repeat;
     background-position: 33px 47px;
+    margin-left: 80px;
+    margin-top: 0;
   }
 
   .target__item-title {
@@ -178,5 +190,15 @@
     text-transform: uppercase;
     text-decoration: none;
     color: #000000;
+
+    &::after {
+      position: absolute;
+      width: 24px;
+      height: 12px;
+      content: "";
+      top: 10px;
+      left: 115px;
+      background-image: url("../../img/icon_arrow.svg");
+    }
   }
 }

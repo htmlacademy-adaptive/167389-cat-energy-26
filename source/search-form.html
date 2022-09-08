@@ -9,7 +9,7 @@
 </head>
 
 <body class="page-container">
-  <header class="main-header">
+  <header class="main-header container">
     <a class="logo" href="#">
       <img class="logo__image" width="33" height="38" alt="логотип Кот-Супергерой" src="./img/logo-mobile.svg">
       <img class="logo__name logo-name" width="101" height="18" alt="Кот Энерджи" src="./img/logo_2.svg">
@@ -19,7 +19,7 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__container">
-        <ul class="main-nav__list site-list site-list--white-letter">
+        <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="./index.html">Главная</a>
           </li>
@@ -27,7 +27,7 @@
             <a class="site-list__link" href="./catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Подбор программы</a>
+            <a class="site-list__link site-list__link--current site-list__link--current-green" href="#">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -71,11 +71,11 @@
       <fieldset class="search-form__group owner-info">
         <legend class="search-form__title owner-info__title">Контактные данные (владельца кота)</legend>
         <ul class="search-form__list owner-info__list">
-          <li class="search-form__item owner-info__item">
+          <li class="search-form__item owner-info__item owner-info__email">
             <label class="search-form__label owner-info__label" for="search-form__email">E-mail:*</label>
             <input class="search-form__text owner-info__text" id="search-form__email" type="text" placeholder="kuklachev@gmail.com">
           </li>
-          <li class="search-form__item owner-info__item">
+          <li class="search-form__item owner-info__item owner-info__phone">
             <label class="search-form__label owner-info__label" for="search-form__phone">Телефон:*</label>
             <input class="search-form__text owner-info__text" id="search-form__phone" type="text" placeholder="8 (960) 900-60-90">
           </li>
