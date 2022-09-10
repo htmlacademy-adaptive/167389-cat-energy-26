@@ -21,7 +21,19 @@
   margin: 0;
   padding: 0;
   border: none;
-  border-bottom: 1px solid #d9d9d9;
+  position: relative;
+  padding-bottom: 26px;
+
+  &:not(:last-of-type)::after {
+    border-bottom: 1px solid #68b738;
+    width: 200%;
+    height: 0;
+    position: absolute;
+    content: "";
+    top: 110%;
+    left: -30%;
+    z-index: -1;
+  }
 }
 
 .search-form__item {
@@ -42,12 +54,19 @@
   font-size: 24px;
   line-height: 26px;
   margin: 0;
-  padding: 0;
+  margin-left: -20px;
+  background-color: #ffffff;
+  padding: 0 20px;
   color: #000000;
+}
+
+.search-form__title--owner {
+  padding-bottom: 35px;
 }
 
 .search-form__label {
   margin: 0;
+  margin-right: 11px;
   padding: 0;
 }
 
@@ -56,9 +75,10 @@
   line-height: 18px;
   text-transform: uppercase;
   margin: 0;
-  padding: 0;
+  padding: 14px 60px 14px 15px;
   padding-left: 15px;
   font-family: inherit;
+  width: 100%;
 }
 
 .search-form__textarea {
@@ -86,6 +106,10 @@
     line-height: 36px;
   }
 
+  .search-form__title--owner {
+    padding-bottom: 76px;
+  }
+
   .search-form__list {
     font-size: 20px;
     line-height: 30px;
@@ -106,12 +130,15 @@
   .search-form__textarea {
     padding: 10px 19px;
     min-height: 174px;
+    margin-top: 76px;
+    margin-bottom: 65px;
   }
 }
 
 @media (min-width: 1440px) {
   .search-form__group {
     display: flex;
+    padding-bottom: 65px;
   }
 
   .search-form__item {
@@ -121,5 +148,9 @@
 
   .search-form__item:last-child {
     margin-bottom: 0;
+  }
+
+  .search-form__textarea {
+    margin-bottom: 2px;
   }
 }

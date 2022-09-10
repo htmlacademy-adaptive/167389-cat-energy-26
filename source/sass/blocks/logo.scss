@@ -1,4 +1,7 @@
 .logo {
+  display: block;
+  padding: 12px 20px;
+
   &--hover {
     opacity: 0.6;
   }
@@ -13,6 +16,11 @@
 }
 
 @media (min-width: 768px) {
+  .logo {
+    display: block;
+    padding: 24px 30px;
+  }
+
   .logo--footer {
     margin: 0;
     padding: 0;

@@ -73,3 +73,18 @@
     top: 167px;
   }
 }
+
+@media (min-width: 1440px) {
+  .promo::before {
+    position: absolute;
+    content: "";
+    background-image:
+      linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../../img/promo-cat--desktop.jpg");
+    background-repeat: no-repeat;
+    min-height: 694px;
+    width: 50%;
+    top: -115px;
+    z-index: 10;
+  }
+}
