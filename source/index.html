@@ -111,15 +111,22 @@
         </div>
         <p class="example__costs">Затраты на питание: 15 000 руб</p>
         <div class="example__slider">
-          <img class="example__slider-image example__slider-image--before" src="./img/before-mobile.png"
-            alt="Толстый котик до похудения">
-          <img class="example__slider-image example__slider-image--after" src="./img/after-mobile.png"
-            alt="Толстый котик после похудения">
-          <button class="example__slider-weight example__slider-weight--loss">Было</button>
-          <div class="example__slider-scale">
-            <div class="example__slider__bar"></div>
+          <div class="example__slider-before">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./img/before-tablet.png 1px, ./img/example-before--tablet@2x.png 2x">
+              <img class="example__slider-image example__slider-image--before" src="./img/example-before--mobile.png" srcset="./img/before-mobile@2x.png 2x" width="280" height="256" alt="Котик до похудения">
+            </picture>
           </div>
-          <button class="example__slider-weight example__slider-weight--gain">Стало</button>
+          <div class="example__slider-after">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./img/example-after--tablet.png 1x, ./img/example-after--tablet@2x.png 2x">
+              <img class="example__slider-image example__slider-image--after" src="./img/example-after--mobile.png" srcset="./img/after-mobile@2x.png 2x" width="280" height="256" alt="Котик после похудения">
+            </picture>
+          </div>
+          <div class="example__slider-scale">
+            <div class="example__slider-bar"></div>
+            <button class="example__slider-weight"></button>
+          </div>
         </div>
       </div>
     </section>
