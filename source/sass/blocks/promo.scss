@@ -69,8 +69,11 @@
   .promo__image {
     margin-bottom: 0;
     position: absolute;
-    left: 120px;
-    top: 167px;
+    left: 0;
+    top: 263px;
+    width: auto;
+    height: auto;
+    z-index: 4;
   }
 }
 
@@ -86,5 +89,15 @@
     width: 50%;
     top: -115px;
     z-index: 10;
+  }
+
+  .promo__image {
+    margin-bottom: 0;
+    position: absolute;
+    left: 448px;
+    top: 32px;
+    width: auto;
+    height: auto;
+    z-index: 15;
   }
 }

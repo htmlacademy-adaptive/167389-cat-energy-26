@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=devise-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page-container">
@@ -39,8 +43,11 @@
       <div class="promo__wrapper">
         <h2 class="promo__title">Функциональное питание для котов</h2>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
-        <img class="promo__image container" src="./img/promo.png" width="280" height="270"
-          alt="Баночка кошачьего питания с курицей">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./img/promo-desktop.png 1x, ./img/promo-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="./img/promo-tablet.png 1x, ./img/promo-tablet@2x.png 2x">
+          <img class="promo__image container" src="./img/promo.png" srcset="./img/promo@2x.png 2x" width="280" height="270" alt="Баночка кошачьего питания с курицей">
+        </picture>
       </div>
       <a class="promo__button  button--promo button" href="#">Подобрать программу</a>
     </section>
@@ -104,15 +111,22 @@
         </div>
         <p class="example__costs">Затраты на питание: 15 000 руб</p>
         <div class="example__slider">
-          <img class="example__slider-image example__slider-image--before" src="./img/before-mobile.png"
-            alt="Толстый котик до похудения">
-          <img class="example__slider-image example__slider-image--after" src="./img/after-mobile.png"
-            alt="Толстый котик после похудения">
-          <button class="example__slider-weight example__slider-weight--loss">Было</button>
-          <div class="example__slider-scale">
-            <div class="example__slider__bar"></div>
+          <div class="example__slider-before">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./img/before-tablet.png 1px, ./img/example-before--tablet@2x.png 2x">
+              <img class="example__slider-image example__slider-image--before" src="./img/example-before--mobile.png" srcset="./img/before-mobile@2x.png 2x" width="280" height="256" alt="Котик до похудения">
+            </picture>
           </div>
-          <button class="example__slider-weight example__slider-weight--gain">Стало</button>
+          <div class="example__slider-after">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./img/example-after--tablet.png 1x, ./img/example-after--tablet@2x.png 2x">
+              <img class="example__slider-image example__slider-image--after" src="./img/example-after--mobile.png" srcset="./img/after-mobile@2x.png 2x" width="280" height="256" alt="Котик после похудения">
+            </picture>
+          </div>
+          <div class="example__slider-scale">
+            <div class="example__slider-bar"></div>
+            <button class="example__slider-weight"></button>
+          </div>
         </div>
       </div>
     </section>
