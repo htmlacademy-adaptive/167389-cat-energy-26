@@ -66,15 +66,13 @@
   color: #000000;
   position: relative;
   display: block;
+  background-image: url("../../img/icon_arrow.svg");
+  background-size: 24px 12px;
+  background-repeat: no-repeat;
+  background-position: 95px center;
 
-  &::after {
-    position: absolute;
-    width: 24px;
-    height: 12px;
-    content: "";
-    top: 0;
-    left: 100px;
-    background-image: url("../../img/icon_arrow.svg");
+  &:hover {
+    background-size: 32px 12px;
   }
 }
 
@@ -121,16 +119,6 @@
     text-transform: uppercase;
     text-decoration: none;
     color: #000000;
-
-    &::after {
-      position: absolute;
-      width: 24px;
-      height: 12px;
-      content: "";
-      top: 8px;
-      left: 117px;
-      background-image: url("../../img/icon_arrow.svg");
-    }
   }
 }
 
@@ -190,15 +178,6 @@
     text-transform: uppercase;
     text-decoration: none;
     color: #000000;
-
-    &::after {
-      position: absolute;
-      width: 24px;
-      height: 12px;
-      content: "";
-      top: 10px;
-      left: 115px;
-      background-image: url("../../img/icon_arrow.svg");
-    }
+    background-position: 122px center;
   }
 }

@@ -15,8 +15,11 @@
 <body class="page-container">
   <header class="main-header container">
     <a class="logo" href="#">
-      <img class="logo__image" width="33" height="38" alt="логотип Кот-Супергерой" src="./img/logo-mobile.svg">
-      <img class="logo__name logo-name" width="101" height="18" alt="Кот Энерджи" src="./img/logo_2.svg">
+      <picture>
+        <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg 1x, ./img/logo-tablet@2x.svg 2x">
+        <img class="logo__image" width="33" height="38" alt="логотип Кот-Супергерой" src="./img/logo-mobile.svg">
+        <img class="logo__name logo-name" width="101" height="18" alt="Кот Энерджи" src="./img/logo_name.svg">
+      </picture>
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
