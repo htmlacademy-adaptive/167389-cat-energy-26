@@ -1,43 +1,70 @@
 .logo {
   display: block;
-  padding: 12px 0;
+  padding: 0;
 
   &--hover {
     opacity: 0.6;
   }
 }
 
+.logo__image {
+  margin: 12px 0;
+}
+
 .logo__name {
-  margin-left: 65px;
   opacity: 0.6;
+  margin: 12px 0;
+  color: #111111;
+
+  &:hover {
+    color: #68b738;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .logo--footer {
   display: block;
   text-align: center;
-  margin-top: 39px;
-  padding-bottom: 32px;
   border-bottom: 1px solid #d9d9d9;
+  padding: 27px 0 20px 0;
 }
 
 @media (min-width: 768px) {
   .logo {
     display: block;
-    padding: 24px 0;
-  }
-
-  .logo__name {
-    display: none;
+    padding: 0;
   }
 
   .logo__image {
     width: 174px;
     height: 52px;
+    margin-top: 24px;
+  }
+
+  .logo-name {
+    display: none;
+  }
+
+  .logo__name {
+    margin-top: 22px;
+    margin-right: 22px;
   }
 
   .logo--footer {
     margin: 0;
     padding: 0;
     border: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .logo__image {
+    width: 204px;
+    height: 59px;
+    margin-top: 53px;
   }
 }

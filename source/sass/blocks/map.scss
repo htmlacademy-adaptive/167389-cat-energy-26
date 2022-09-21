@@ -19,13 +19,17 @@
 }
 
 @media (min-width: 768px) {
+  .map__google {
+    height: 400px;
+  }
+
   .map::after {
     position: absolute;
     background-image: url("../../img/map_pin-pc.png");
     content: "";
     width: 113px;
     height: 106px;
-    top: 139px;
-    left: 134px;
+    top: 148px;
+    left: 333px;
   }
 }

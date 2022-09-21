@@ -32,18 +32,20 @@
   margin: 0;
   margin-bottom: 164px;
   padding: 0;
+  text-transform: uppercase;
 }
 
 .promo__image {
   margin-bottom: 30px;
   position: absolute;
-  left: 20px;
+  left: 0px;
   top: 167px;
 }
 
 @media (min-width: 768px) {
   .promo {
-    padding: 0 87px;
+    padding: 0;
+    padding-top: 38px;
   }
 
   .promo__wrapper {
@@ -51,7 +53,7 @@
     background-image: none;
     color: #000000;
     text-align: left;
-    max-width: 414px;
+    max-width: 416px;
     margin-left: 117px;
     min-height: auto;
   }
@@ -73,8 +75,8 @@
   .promo__image {
     margin-bottom: 0;
     position: absolute;
-    left: 0;
-    top: 263px;
+    left: -1px;
+    top: 238px;
     width: auto;
     height: auto;
     z-index: 4;
@@ -95,17 +97,26 @@
     background-repeat: no-repeat;
     min-height: 694px;
     width: 50%;
-    top: -115px;
+    top: -225px;
     z-index: 10;
+  }
+
+  .promo__wrapper {
+    margin-left: 110px;
   }
 
   .promo__image {
     margin-bottom: 0;
     position: absolute;
     left: 448px;
-    top: 32px;
+    top: -81px;
     width: auto;
     height: auto;
     z-index: 15;
+  }
+
+  .promo__title {
+    margin-top: 88px;
+    margin-bottom: 40px;
   }
 }

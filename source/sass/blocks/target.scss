@@ -4,6 +4,10 @@
   width: auto;
 }
 
+.target__wrapper {
+  margin-top: 20px;
+}
+
 .target__list {
   list-style-type: none;
   margin: 0;
@@ -16,6 +20,7 @@
   font-weight: 400;
   font-style: normal;
   padding: 21px 33px 22px 19px;
+  margin-bottom: 20px;
 }
 
 .target__item--weight-loss {
@@ -41,6 +46,7 @@
   margin-bottom: 29px;
   padding: 0;
   font-style: normal;
+  font-weight: 400;
 }
 
 .target__item-description {
@@ -48,17 +54,14 @@
   line-height: 18px;
   color: #444444;
   margin: 0;
-  padding-bottom: 42px;
+  padding-bottom: 25px;
   font-family: "Arial", sans-serif;
-
-
-  &::after {
-    border-bottom: 1px solid #d9d9d9;
-  }
+  position: relative;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .target__item-link {
-  margin-top: 19px;
+  margin-top: 18px;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -67,37 +70,41 @@
   position: relative;
   display: block;
   background-image: url("../../img/icon_arrow.svg");
-  background-size: 24px 12px;
+  background-size: 31px 12px;
   background-repeat: no-repeat;
-  background-position: 95px center;
+  background-position: 101px center;
 
   &:hover {
     background-size: 32px 12px;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
 @media (min-width: 768px) {
   .target__item {
-    padding: 77px 316px 57px 52px;
+    padding: 77px 316px 55px 52px;
   }
 
   .target__item--weight-loss {
     background-image: url("../../img/cat_back-loss-tablet.png");
     background-repeat: no-repeat;
-    background-position: 85% 81px;
+    background-position: 87% 81px;
   }
 
   .target__item--weight-gain {
     background-image: url("../../img/cat_back-gain-tablet.png");
     background-repeat: no-repeat;
-    background-position: 90% 91px;
+    background-position: 93% 91px;
     margin-top: 30px;
   }
 
   .target__item-title {
     padding: 0;
     margin: 0;
-    margin-bottom: 24px;
+    margin-bottom: 26px;
     font-size: 36px;
     line-height: 36px;
     font-style: normal;
@@ -110,6 +117,8 @@
     color: #444444;
     margin: 0;
     font-family: "Arial", sans-serif;
+    padding: 0;
+    border-bottom: none;
   }
 
   .target__item-link {
@@ -119,6 +128,7 @@
     text-transform: uppercase;
     text-decoration: none;
     color: #000000;
+    background-position: 130px center;
   }
 }
 
@@ -130,24 +140,24 @@
   .target__list {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 81px;
+    margin-bottom: 51px;
   }
 
   .target__item {
-    padding: 77px 52px 59px 52px;
+    padding: 70px 52px 59px 52px;
     max-width: 467px;
   }
 
   .target__item--weight-loss {
     background-image: url("../../img/cat_back-loss-pc.svg");
     background-repeat: no-repeat;
-    background-position: 41px 52px;
+    background-position: 52px 35px;
   }
 
   .target__item--weight-gain {
     background-image: url("../../img/cat_back-gain-pc.svg");
     background-repeat: no-repeat;
-    background-position: 33px 47px;
+    background-position: 33px 40px;
     margin-left: 80px;
     margin-top: 0;
   }
@@ -155,7 +165,7 @@
   .target__item-title {
     padding: 0;
     margin: 0;
-    margin-bottom: 73px;
+    margin-bottom: 74px;
     margin-left: 162px;
     font-size: 36px;
     line-height: 36px;
@@ -172,12 +182,12 @@
   }
 
   .target__item-link {
-    margin-top: 52px;
+    margin-top: 25px;
     font-size: 20px;
     line-height: 30px;
     text-transform: uppercase;
     text-decoration: none;
     color: #000000;
-    background-position: 122px center;
+    background-position: 131px center;
   }
 }
