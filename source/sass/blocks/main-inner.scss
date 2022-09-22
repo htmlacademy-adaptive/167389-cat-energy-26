@@ -21,7 +21,7 @@
   height: 1px;
   background-color: #ebebeb;
   bottom: 0;
-  left:-200px;
+  left: -200px;
 }
 
 .main-inner__actions {
@@ -29,7 +29,7 @@
     linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
     url("../../img/catalog-actions-cat.jpg");
   background-repeat: no-repeat;
- height: 100%;
+  height: 100%;
   margin: 35px 0;
   position: relative;
 }
@@ -46,13 +46,13 @@
 
 .main-inner__text {
   color: #ffffff;
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  margin-top: 189px;
   margin: 0;
+  margin-top: 189px;
 }
 
 @media (min-width: 768px) {
@@ -60,10 +60,10 @@
     font-size: 60px;
     font-weight: 400;
     line-height: 60px;
-    margin-bottom: 163px;
     font-style: normal;
     margin: 0;
     margin-top: 40px;
+    margin-bottom: 163px;
     padding-bottom: 18px;
   }
 
