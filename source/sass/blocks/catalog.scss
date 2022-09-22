@@ -5,15 +5,18 @@
 .catalog__list {
   list-style: none;
   padding: 0;
+  padding-top: 19px;
+  margin: 0;
 }
 
 @media (min-width: 768px) {
   .catalog__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 60px;
-    row-gap: 141px;
+    column-gap: 63px;
+    row-gap: 0;
     margin: 0;
+    padding: 0;
   }
 
   .catalog__item {
@@ -28,6 +31,5 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 80px;
-    row-gap: 143px;
   }
 }

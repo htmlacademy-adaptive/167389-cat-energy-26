@@ -4,6 +4,10 @@
   text-align: left;
 }
 
+.instruction__wrapper {
+  margin-bottom: 30px;
+}
+
 .instruction__title {
   margin: 0;
   padding: 0;
@@ -11,12 +15,13 @@
   line-height: 40px;
   color: #000000;
   font-family: "Oswald", sans-serif;
+  font-weight: 400;
 }
 
 .instruction__list {
   list-style-type: none;
   margin: 0;
-  margin-top: 42px;
+  margin-top: 39px;
   padding: 0;
 }
 
@@ -38,17 +43,36 @@
 
 .instruction__icon {
   background-color: #68b738;
-  width: 34px;
+  min-width: 34px;
   height: 34px;
   padding: 13px;
   margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
+  .instruction {
+    position: relative;
+  }
+
+  .instruction::after {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #e6e6e6;
+    bottom: 2px;
+    left: 0;
+    content: "";
+  }
+
+  .instruction__wrapper {
+    padding-bottom: 48px;
+  }
+
   .instruction__title {
     font-size: 60px;
     line-height: 60px;
     font-weight: 400;
+    margin-top: 45px;
   }
 
   .instruction__list {
@@ -59,7 +83,7 @@
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     row-gap: 37px;
-    column-gap: 137px;
+    column-gap: 110px;
     max-width: 657px;
   }
 
@@ -69,7 +93,7 @@
     counter-increment: program-counter;
     margin-bottom: 37px;
     padding-top: 40px;
-    padding-bottom: 57px;
+    padding-bottom: 20px;
   }
 
   .instruction__item::after {
@@ -79,36 +103,55 @@
     font-size: 280px;
     color: #f2f2f2;
     z-index: -1;
-    top: -79px;
-    right: 35px;
+    top: -70px;
+    left: 120px;
   }
 
   .instruction__icon {
-    width: 54px;
-    height: 54px;
+    width: 33px;
+    height: 33px;
     margin: 0;
+    padding: 23px;
   }
 
   .instruction__text {
     padding-left: 0;
     margin: 0;
-    padding-top: 31px;
+    padding-top: 33px;
     font-size: 16px;
     line-height: 24px;
     color: #444444;
     font-family: "Arial", sans-serif;
+    max-width: 245px;
   }
 }
 
 @media (min-width: 1440px) {
   .instruction__list {
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
     max-width: 100%;
+    gap: 0;
   }
 
-  .instruction__item {
-    max-width: 230px;
+  .instruction__wrapper {
+    margin: 0;
+  }
+
+  .instruction__item:not(:last-child) {
+    width: 247px;
+    margin-right: 77px;
+  }
+
+  .instruction__title {
+    margin-top: 20px;
+  }
+
+  .instruction__text {
+    max-width: 246px;
+  }
+
+  .instruction::after {
+    display: none;
   }
 }

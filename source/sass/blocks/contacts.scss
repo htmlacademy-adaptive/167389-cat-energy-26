@@ -1,5 +1,5 @@
 .contacts {
-  padding: 26px 0;
+  padding: 26px 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -15,19 +15,30 @@
 }
 
 .contacts__address {
+  padding: 0;
   margin: 0;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-style: normal;
   color: #444444;
+  max-width: 139px;
+}
+
+.contacts__address-street {
+  margin: 0;
+}
+
+.contacts__address-town {
+  margin: 0;
 }
 
 @media (min-width: 768px) {
   .contacts {
-    padding: 56px 70px;
+    padding: 61px 70px 60px 70px;
     display: flex;
     justify-content: space-between;
+    background-color: #ffffff;
   }
 
   .contacts__slogan {
@@ -42,18 +53,29 @@
     font-size: 16px;
     line-height: 20px;
     max-width: 172px;
+    text-align: right;
+  }
+
+  .contacts__address-street {
+    margin: 0;
+    margin-bottom: 20px;
   }
 }
 
 @media (min-width: 1440px) {
   .contacts {
-    padding: 56px 80px;
-    max-width: 565px;
+    padding: 57px 80px;
+    width: 408px;
     background-color: #ffffff;
     position: absolute;
     top: 95px;
     left: 110px;
     content: "";
     z-index: 1;
+  }
+
+  .contacts__address {
+    text-align: left;
+    width: 157px;
   }
 }
